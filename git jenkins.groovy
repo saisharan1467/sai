@@ -2,28 +2,31 @@ pipeline {
     agent any
 
     stages {
-        stage ('Complie Stage') {
-            
+        stage ('Compile Stage') {
+
             steps {
                 withMaven(maven : 'maven.github') {
                     sh 'mvn clean compile'
                 }
             }
         }
+
         stage ('Testing Stage') {
 
             steps {
                 withMaven(maven : 'maven.github') {
                     sh 'mvn test'
                 }
-            } 
+            }
         }
-        stage ('Testing Stage') {
+
+
+        stage ('Deployment Stage') {
             steps {
                 withMaven(maven : 'maven.github') {
-                    sh 'mvn deploy  '
+                    sh 'mvn deploy'
                 }
-            } 
+            }
         }
     }
 }
