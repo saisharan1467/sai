@@ -1,6 +1,6 @@
 # sai
 my repository
 im fro m india
-hyde rabad
+hyderabad
 nbnb
 nm
