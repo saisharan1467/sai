@@ -1,0 +1,39 @@
+REBASING-- IT IS ANOTHER KIND OF MERGING IT ACTUALLY SOLVES SAME AS MERGING.BUT IT ANOTHER WAY IT ACTUALLY DOES INSTEAD OF CREATING TWO COMMITS IT ACTUALLY PLACES THE  ENTIRE COMMIT HISTORY OF BRANCH OTO TO THE TIP OF MASTER BY WHICH WE GET MUCH CLENAER PROJECT HISTORY. IT IS DONE TO REDUCE THE NO OF BRANCHES ALSO. IT ALSO HELPS IN NAGIVATING IN BETTER WAY
+ 
+ COMMAND---GIT CHECKOUT FIRSTBRANCH AND (CREATE A FILE IN THE C-DRIVE(TEXT FILE)
+          - GIT ADD -A
+          -  GIT COMMIT -A -M "ADDING FOR REBASING
+            NOW ENTER LS WE CAN SEE THE CREATED FILE
+            NOW WHEN WE GO BACK TO MASTER-
+            GIT CHECKOUT MASTER
+            NOW CHECK THE FILES LS
+            GIT CHECKOUT FIRSTBRANCH 
+            GIT REBASE MASTER          
+
+actually if we gve read setting everyone can access the central repository. if we want to other people to not to connect to pushing wrong code so we connected to central rpoository via SSH.
+
+in git hub cone with where we copy paste the url we should select the ssh firstly we selected http but now we should select ssh
+
+in git command---ssh-keygen
+                 overwrite-yes
+                ssh key will be generated and it will be like it is saved in                                 /c/users/sai/.ssh/id_rsa.pub
+                 if we wnt to view the key enter command cat and above link
+                 and now the key is seen in git 
+
+     now we should add the key in git hub in ssh and gpg keys like 
+      entering title and paste the key which is genterated after cat command in git
+    
+      now in git
+
+               command ssh -Tgit@github.com
+    now we have to do like the files in the first branch should be in the local repository 
+to make a new new branch in the central repository and that branch in central repository contains all files the files in the first branch in the local repository.
+
+     commands git checkout firstbranch
+              git push origin firstbranch
+          if we want to push changes in the mastet
+
+    commands git checkout master
+             git push origin master
+               
+     

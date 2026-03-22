@@ -1,0 +1,21 @@
+1)***---branching-pointers to specific commit. main branch is called master branch and it contains also codes and when we are working on it and if we have done some changes individualy. when we have done few changes and if we do no want to disturb the  
+
+        creation of different branches-in the master branch we hace to create a branch
+
+    1) command>> git branch firstbranch(name of branch) now it contains  all the files in the master branch. now if we want to move in the created branch
+
+    2) command>>git checkout firstbranch ,now we can work in the firstbranch now we can create files in the firstbranch like text file 
+   
+    3)command>git add edu4(textfile name).txt
+
+    4)git commit -m "making changes in first branch" 
+
+and now if we want to go back to master branch 
+    5)git checkout master
+
+
+2)***merging--combining the work of different branches together. we are merging the first branch to master branch
+
+command---git merge name of branch(firstbranch)
+          for checking the branch LS
+
